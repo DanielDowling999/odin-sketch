@@ -1,0 +1,22 @@
+* {
+    box-sizing:border-box;
+}
+
+.square{
+    width:20px;
+    height:20px;
+    background-color:grey;
+    margin:2px;
+    
+}
+
+.square:hover{
+    background-color:black;
+}
+
+#grid{
+    display:flex;
+    flex-wrap:wrap;
+    width:390px;
+
+}
