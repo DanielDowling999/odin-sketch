@@ -12,10 +12,7 @@ body{
 }
 
 .square{
-    width:56px;
-    height:56px;
     background-color:white;
-    margin:2px;
     
 }
 
@@ -23,6 +20,7 @@ body{
     display:flex;
     flex-wrap:wrap;
     width:960px;
+    height:960px;
     background-color: white;
 }
 
@@ -30,7 +28,7 @@ body{
     margin:20px;
     
     font-size:30px;
-    color:white;
+    color:#ffffff;
 
 
 }

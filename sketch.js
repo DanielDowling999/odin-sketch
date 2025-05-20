@@ -1,13 +1,18 @@
 console.log("Hello World!");
 
-function makeGrid(){
+
+
+function makeGrid(row_size){
+    let square_size = 960/row_size;
     const grid = document.querySelector("#grid")
-    for(let i = 0; i < 16; i++){
-        for (let j = 0; j < 16; j++){
+    for(let i = 0; i < row_size; i++){
+        for (let j = 0; j < row_size; j++){
             console.log("Making box " + i + " " + j);
             const square = document.createElement("div");
             square.classList.add('square');
             square.dataset.darkness = '1';
+            square.style.width = square_size + 'px';
+            square.style.height = square_size + 'px';
             grid.appendChild(square);
 
             square.addEventListener('mouseenter', () => {
@@ -36,11 +41,5 @@ function changeColor(square){
     square.dataset.darkness = currDarkness;
 }
 
-makeGrid();
+makeGrid(2);
 
-/*const squares = document.querySelectorAll(".square");
-squares.forEach(square => {
-    square.addEventListener('mouseenter',() => {
-        changeColor(square);
-    } )
-})*/
