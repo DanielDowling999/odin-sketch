@@ -28,7 +28,15 @@ buttons.forEach(button => {
             makeGrid(currSize);
         }
         else{
-            randomColour = !randomColour;
+            if (randomColour){
+                randomColour = !randomColour;
+                button.textContent = "Randomize";
+            }
+            else{
+                randomColour = !randomColour;
+                button.textContent = "Derandomize";
+            }
+            
         }
     })
     button.addEventListener('mouseleave', () => {
