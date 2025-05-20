@@ -1,22 +1,48 @@
 * {
     box-sizing:border-box;
+    background-color:teal;
+    font-family: "Monaco", monospace;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .square{
-    width:20px;
-    height:20px;
-    background-color:grey;
+    width:56px;
+    height:56px;
+    background-color:white;
     margin:2px;
     
-}
-
-.square:hover{
-    background-color:black;
 }
 
 #grid{
     display:flex;
     flex-wrap:wrap;
-    width:390px;
+    width:960px;
+    background-color: white;
+}
 
+#heading{
+    margin:20px;
+    
+    font-size:30px;
+    color:white;
+
+
+}
+
+#newGame{
+    margin:20px;
+}
+
+button{
+    background-color: white;
+    color:black;
+    width:150px;
+    border:0;
+    font-size:25px;
 }
