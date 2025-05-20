@@ -33,14 +33,30 @@ body{
 
 }
 
-#newGame{
+#options{
     margin:20px;
+    width:960px;
+    display:flex;
+    justify-content: space-between;
 }
 
-button{
+input, button{
     background-color: white;
     color:black;
     width:150px;
+    font-size:25px;   
+}
+
+button{
     border:0;
-    font-size:25px;
+    /*transition: background-color 0.3s;*/
+}
+
+input { 
+    border: 1px solid black;
+}
+
+.flash {
+    background-color: black;
+    color:white;
 }
